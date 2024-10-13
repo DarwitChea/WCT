@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    label {
+        width: 160px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+
+    input {
+        border: 1px solid black;
+    }
+
+    .clear input {
+        width: 160px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <h1>Exercise Review</h1>
+    <ol>
+        <li><a href="./link.html" target="_blank">Link</a></li>
+        <li><a href="./video.html" target="_blank">Video</a></li>
+    </ol>
+
+    <h1>Register Form</h1>
+    <form>
+        <label for="email">Email<sup>*</sup></label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="password">Password<sup>*</sup></label>
+        <input type="text" id="password" name="password">
+
+        <label for="confirm_password">Confirm Password<sup>*</sup></label>
+        <input type="text" id="confirm_password" name="confirm_password"><br>
+
+        <span>(Min lenght 8 characters)</span><br>
+
+        <label for="phone">Phone<sup>*</sup></label>
+        <input type="text" id="phone" name="phone"><br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender">
+        <label for="Male">Male</label><br>
+
+        <input type="reset" id="clear" value="Clear">
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+
+</html>
