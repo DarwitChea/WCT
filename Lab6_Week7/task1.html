@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task01</title>
+</head>
+<style>
+    div {
+        width: 700px;
+        height: 300px;
+        background-color: orange;
+        display: flex;
+        justify-content: top;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        padding: 14px 16px;
+        text-align: center;
+    }
+
+    #convert {
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+    }
+
+    input {
+
+        width: 300px;
+        height: 25px;
+    }
+
+    #string-container {
+        margin-top: 20px;
+        background-color: white;
+        width: 300px;
+        height: fit-content;
+    }
+
+    #string {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Number to String Converter</h1>
+        <input type="text" id="number" name="number" placeholder="Enter number">
+        <input type="button" id="convert" name="convert" value="Convert" onclick="convert()">
+        <div type="text" id="string-container" name="string" placeholder="Result">
+            <p id="string" style="margin: 10px;"></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function convert() {
+        var number = document.getElementById("number").value.toString();
+        var output = "";
+        for (let i = 0; i < number.length; i++) {
+            console.log(number[i]);
+            if (number[i] == 0) {
+                output += "zero "
+            }
+            else if (number[i] == 1) {
+                output += "one "
+            }
+            else if (number[i] == 2) {
+                output += "two "
+            }
+            else if (number[i] == 3) {
+                output += "three "
+            }
+            else if (number[i] == 4) {
+                output += "four "
+            }
+            else if (number[i] == 5) {
+                output += "five "
+            }
+            else if (number[i] == 6) {
+                output += "six "
+            }
+            else if (number[i] == 7) {
+                output += "seven "
+            }
+            else if (number[i] == 8) {
+                output += "eight "
+            }
+            else {
+                output += "nine "
+            }
+        }
+        const element = document.getElementById("string");
+        element.innerHTML = output;
+    }
+</script>
+
+</html>
