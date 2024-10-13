@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    form {
+        width: 50%;
+        background-color: rgb(241, 241, 241);
+    }
+
+    label {
+        margin-top: 15px;
+        width: 90%;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+
+    input {
+        border: 1px solid gray;
+        margin-left: 20px;
+        width: 90%;
+        height: 20px;
+        padding: 5px 10px;
+        outline: none;
+    }
+
+    input:focus {
+        border: 2px solid gray;
+    }
+
+    select {
+        width: 93%;
+        margin-left: 20px;
+        padding: 16px 20px;
+        border: gray;
+        background-color: white;
+    }
+
+    #subject {
+        width: 90%;
+        height: 200px;
+        text-align: start;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    input[type=submit] {
+        margin-top: 20px;
+        width: 80px;
+        height: 40px;
+        background-color: rgb(119, 170, 100);
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+</style>
+
+<body>
+    <h1>Contact Form</h1>
+    <form>
+        <label for="firstname">First Name</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Your name..."><br>
+
+        <label for="lastname">Last Name</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+
+        <label for="country">Country</label><br>
+        <select id="country" name="country">
+            <option value="au">Australia</option>
+            <option value="ca">Cambodia</option>
+            <option value="usa">England</option>
+        </select>
+
+        <label for="subject">Subject</label><br>
+        <textarea type="text" id="subject" name="subject" placeholder="Write something..."></textarea>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        <br><br>
+    </form>
+</body>
+
+</html>

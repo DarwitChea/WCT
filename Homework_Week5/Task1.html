@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .vertical li a {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(241, 241, 241);
+        display: block;
+        padding: 8px 16px;
+        width: 200px;
+    }
+
+    .vertical li a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .vertical li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+
+    .horizontal {
+        background-color: rgb(241, 241, 241);
+        width: 28%;
+
+    }
+
+    .horizontal li a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        background-color: rgb(241, 241, 241);
+        padding: 14px 16px;
+        width: 800px;
+    }
+
+    .horizontal li {
+        display: inline;
+        float: left;
+        height: 30px;
+        margin-top: 7px;
+    }
+
+    .horizontal li a.about {
+        text-align: right;
+        margin-left: 100px;
+    }
+
+    .horizontal li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .horizontal li a.active {
+        background-color: rgb(80, 137, 178);
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>1. Vertical Menu</h1>
+    <div>
+        <ul class="vertical">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+
+    <h1>2. Horizontal Menu</h1>
+    <div>
+        <ul class="horizontal">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a class="active" href="#contact">Contact</a></li>
+            <li><a class="about" href="#about">About</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
