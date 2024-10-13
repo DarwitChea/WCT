@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    #background {
+        background: linear-gradient(to right, antiquewhite 50%, white 0%)
+    }
+</style>
+
+<body>
+    <h2>Task 1</h2>
+    <hr>
+    <p>Even though modern websites are generally built with user-friendly interfaces, it's useful to
+        know some basic HTMl. If you know the following 17 HTML example tags (and a few extras), you'll be able to
+        create a basic webpage from scratch or tweak the code created by an app like WordPress.
+    </p>
+    <p>
+        We've provided HTML code examples with output for most of the tags. If you want to see them in action, download
+        the sample HTML file at the end of the article. You can play with it in a text editor and load it up in a
+        browser to see what your changes do.
+    </p>
+
+    <h2>1. <&excl;DOCTYPE html>
+            <hr>
+    </h2>
+    <p>
+        You'll need this tag at the beginning of every HTML document you create. It ensures that a browser knows that
+        it's reading HTML, and that it expects HTML5, the latest version.
+    </p>
+    <p>
+        Even though this isn't actually an HTML tag, it's still a good one to know.
+    </p>
+    <h2>
+        2. &lt;html&gt;
+        <hr>
+    </h2>
+    <p>
+        This is another tag that tells a browser that it's reading HTML. The &lt;html> tag goes straight after the
+        DOCTYPE tag, and you close it with a &lt;/html> tag right at the end of your file. Everything else in your
+        document goes between these tags.
+    </p>
+    <p id="background">
+        &lt;<span style="color:#b7437b">head</span>><br>
+        &lt;<span style="color:#b7437b">title</span>>My Website&lt;<span style="color:#b7437b">/title</span>><br>
+        &lt;<span style="color:#b7437b">/head</span>>
+    </p>
+    <p>
+        That's the name that will be displayed as the tab title when it's opened in a browser.
+    </p>
+
+
+    <h2>Task 2: Student Scores</h2>
+    <table style="width:50%; height:30px">
+        <tr>
+            <th rowspan="2" ; style="text-align:left ;vertical-align:top; width:30px">No.</th>
+            <th rowspan="2" ; style="text-align:center ;vertical-align:top; width:200px">Student Name</th>
+            <th rowspan="1" ; colspan="4">Score</th>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="width:75px">Attendance</td>
+            <td style="width:75px">Homework and Lab</td>
+            <td style="width:75px">Project</td>
+            <td style="width:75px">Score</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">1</td>
+            <td>Mey Long</td>
+            <td>10</td>
+            <td>35</td>
+            <td>40</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">2</td>
+            <td>Hong Heng</td>
+            <td>10</td>
+            <td>30</td>
+            <td>40</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">3</td>
+            <td>Sok San</td>
+            <td>10</td>
+            <td>40</td>
+            <td>40</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td colspan="5" ; style="text-align:right">Total Student</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <h2>Task 3: Embed video to your page</h2>
+    <h4>HTML in 100 Secons</h4>
+    <hr>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/ok-plXXHlWw?si=Z5H8raQ1035cIOzb">
+    </iframe>
+</body>
+
+</html>
