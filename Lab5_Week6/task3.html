@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f1f1f1;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .header {
+        background-color: rgb(80, 163, 231);
+        color: white;
+        width: 100%;
+        height: 20px;
+        padding: 14px 16px;
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+        background-color: rgb(148, 190, 110);
+        color: white;
+        width: 70%;
+        height: 400px;
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar {
+        display: flex;
+        background-color: rgb(126, 126, 126);
+        color: white;
+        width: 30%;
+        height: 400px;
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        background-color: rgb(80, 163, 231);
+        color: white;
+        width: 100%;
+        height: 20px;
+        padding: 14px 16px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 800px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .header {
+            order: 1;
+        }
+
+        .sidebar {
+            width: 100%;
+            height: 100px;
+            order: 2;
+        }
+
+        .main {
+            width: 100%;
+            order: 3;
+        }
+
+        .footer {
+            order: 4;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header"><b>Header</b> </div>
+        <div class="main"><b>Main</b></div>
+        <div class="sidebar"><b>Sidebar</b></div>
+        <div class="footer"><b>Footer</b></div>
+    </div>
+</body>
+
+
+</html>
